@@ -720,3 +720,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 10px;
   }
 }
+
+
+
+
+.footer-container {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #gray; 
+}
+
+.made-by {
+  color: white;
+  margin-top: 10px;
+  font-size: 14px;
+}
