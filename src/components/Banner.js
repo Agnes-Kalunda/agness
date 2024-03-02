@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer", "ML Engineer", "Technical Writer" ];
+  const toRotate = [ "Software Engineer",  "Technical Writer" ];
   const period = 500;
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
+            {/* <TrackVisibility> */}
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <div className="circular-image">
@@ -75,7 +75,7 @@ export const Banner = () => {
                   </div>
                   
                 </div>}
-            </TrackVisibility>
+            {/* </TrackVisibility> */}
           </Col>
         </Row>
       </Container>

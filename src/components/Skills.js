@@ -1,9 +1,13 @@
-import vite from "../assets/img/vite.svg";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import machine from "../assets/img/machine.png"
-import technical from "../assets/img/technical.png"
-import web from "../assets/img/web.png"
+import python from '../assets/img/python.jpeg';
+import react from '../assets/img/react.png';
+import flask from '../assets/img/flask.jpeg';
+import js from '../assets/img/js.jpeg';
+import fastapi from '../assets/img/fastapi.png';
+import postgres from '../assets/img/postgres.png';
+import django from '../assets/img/django.png';
 
 export const Skills = () => {
   const responsive = {
@@ -36,20 +40,32 @@ export const Skills = () => {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={web} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={js} alt="Image" />
+                                <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={web} alt="Image" />
-                                <h5>Machine Learning</h5>
+                                <img src={react} alt="Image" />
+                                <h5>ReactJs</h5>
                             </div>
                             <div className="item">
-                                <img src={web} alt="Image" />
-                                <h5>Technical Writing</h5>
+                                <img src={python} alt="Image" />
+                                <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src={web} alt="Image" />
-                                <h5>UI/UX</h5>
+                                <img src={django} alt="Image" />
+                                <h5>Django</h5>
+                            </div>
+                            <div className="item">
+                                <img src={fastapi} alt="Image" />
+                                <h5>FastAPI</h5>
+                            </div>
+                            <div className="item">
+                                <img src={flask} alt="Image" />
+                                <h5>Flask</h5>
+                            </div>
+                            <div className="item">
+                                <img src={postgres} alt="Image" />
+                                <h5>Postgres</h5>
                             </div>
                         </Carousel>
                     </div>

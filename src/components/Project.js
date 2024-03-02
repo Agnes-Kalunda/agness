@@ -30,22 +30,25 @@ export const Projects = () => {
       liveLink: "#",
       codeLink : '#'
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: vite,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: vite,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: vite,
-    // },
+   
   ];
+
+  // machine learning card
+  const MLCard = () => (
+    <Col md={4}>
+     
+      <div className="card">
+        <img src={screenshot1} className="card-img-top" alt="ML Project" />
+        <div className="card-body">
+          <h5 className="card-title">Your ML Project Title</h5>
+          <p className="card-text">Description of your ML project.</p>
+          <a href="#" className="btn btn-primary">
+            View Details
+          </a>
+        </div>
+      </div>
+    </Col>
+  );
 
   return (
     <section className="project" id="project">
@@ -56,7 +59,14 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p> JavaScript (ReactJs) for dynamic front-end experiences and Python (Django, FastAPI, Flask) for robust back-end solutions. Currently delving into machine learning with Python, I'm excited about applying AI to real-world challenges.
+
+Beyond coding, I share insights through technical blogs, breaking down complex concepts. Explore my projects, read my blogs, and let's connect for tech discussions or collaborations!
+
+
+
+
+.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -85,7 +95,8 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>My exposure to web development technologies, such as Python and JavaScript, and modern frameworks like Django, Flask, FastAPI and React, has equipped me to seamlessly integrate machine learning models into web applications. I am committed to creating user-friendly, responsive, and data-driven interfaces that provide actionable insights to both users and stakeholders.</p>
+                   
+                   <MLCard/>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
     <div style={{ display: 'block', textAlign: 'left' }}>
