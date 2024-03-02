@@ -58,7 +58,8 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Kalunda, a `} 
                 <br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "ML Engineer", "Technical Writer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>My friends call me Aggie.</p> 
+                  <p>Tech enthusiast skilled in JavaScript (ReactJs) and Python (Django, FastAPI, Flask). Exploring machine learning with Python. Check out my projects and blogs! Excited to change the world , one line of code at a time </p>
                   <button onClick={() => console.log('connect')} style={{ color: 'white' }}>
   <a href="#connect" style={{ color: 'white', textDecoration: 'none' }}>Let’s Connect <ArrowRightCircle size={25} /></a>
 </button>

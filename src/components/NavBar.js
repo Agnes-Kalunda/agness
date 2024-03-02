@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
-// import vite from "../assets/img/vite.svg";
-import agnes from "../assets/img/Aggie.png"
-// import git from "../assets/img/git.png";
-// import link from "../assets/img/link.png";
-// import x from "../assets/img/x.png"
+import agnes from "../assets/img/Aggie.png";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -31,14 +27,12 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
-          <img src={agnes} alt="logo" />
-        </Navbar.Brand>
+        <Navbar.Brand href="#home"></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
 
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="ms-auto">
           <Nav className="me-auto">
             <Nav.Link
               href="#home"
@@ -68,24 +62,28 @@ export const NavBar = () => {
               Projects
             </Nav.Link>
 
-           
-
-
-
-
+            <Nav.Link
+              href="https://medium.com/@AgnesMbiti"
+              className={
+                activeLink === "project" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("project")}
+              target="_blank"
+            >
+              Blog
+            </Nav.Link>
           </Nav>
-          <span className="">
-           
-
-          <Nav.Link
+          <span className="connect-button">
+            <Nav.Link
               href="#connect"
               className={
                 activeLink === "connect" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("connect")}
             >
-              <h2><strong class="underline-hover">Let's connect</strong></h2>
-
+              <h2>
+                <strong className="underline-hover">Let's connect</strong>
+              </h2>
             </Nav.Link>
           </span>
         </Navbar.Collapse>

@@ -9,6 +9,14 @@ import screenshot1 from '../assets/img/screenshot1.png'
 export const Projects = () => {
 
   const projects = [
+
+    {
+      title: "Fashion E-Commerce",
+      description: "Built on Django framework and Postgres database",
+      imgUrl: screenshot1,
+      liveLink: "#",
+      codeLink : '#'
+    },
     {
       title: "AI Content generator",
       description: "Using OpenAI's GPT-3 Davinci model and Django ",
@@ -23,13 +31,7 @@ export const Projects = () => {
       liveLink: "#",
       codeLink : '#'
     },
-    {
-      title: "Fashion E-Commerce",
-      description: "Built on Django framework and Postgres database",
-      imgUrl: project1,
-      liveLink: "#",
-      codeLink : '#'
-    },
+   
    
   ];
 
@@ -59,14 +61,14 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p> JavaScript (ReactJs) for dynamic front-end experiences and Python (Django, FastAPI, Flask) for robust back-end solutions. Currently delving into machine learning with Python, I'm excited about applying AI to real-world challenges.
+                <p> I mostly use JavaScript (ReactJs) for dynamic front-end experiences and Python (Django, FastAPI, Flask) for robust back-end solutions. Currently delving into machine learning with Python, I'm excited about applying AI to real-world challenges.
 
 Beyond coding, I share insights through technical blogs, breaking down complex concepts. Explore my projects, read my blogs, and let's connect for tech discussions or collaborations!
 
 
 
 
-.</p>
+</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
