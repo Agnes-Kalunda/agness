@@ -41,31 +41,31 @@ export const Skills = () => {
 Discover the tools that enable my proficiency in creating dynamic and user-friendly front-end experiences, coupled with expertise in building robust back-end solutions.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={js} alt="Image" />
+                                {/* <img src={js} alt="Image" /> */}
                                 <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={react} alt="Image" />
+                                {/* <img src={react} alt="Image" /> */}
                                 <h5>ReactJs</h5>
                             </div>
                             <div className="item">
-                                <img src={python} alt="Image" />
+                                {/* <img src={python} alt="Image" /> */}
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src={django} alt="Image" />
+                                {/* <img src={django} alt="Image" /> */}
                                 <h5>Django</h5>
                             </div>
                             <div className="item">
-                                <img src={fastapi} alt="Image" />
+                                {/* <img src={fastapi} alt="Image" /> */}
                                 <h5>FastAPI</h5>
                             </div>
                             <div className="item">
-                                <img src={flask} alt="Image" />
+                                {/* <img src={flask} alt="Image" /> */}
                                 <h5>Flask</h5>
                             </div>
                             <div className="item">
-                                <img src={postgres} alt="Image" />
+                                {/* <img src={postgres} alt="Image" /> */}
                                 <h5>Postgres</h5>
                             </div>
                         </Carousel>
